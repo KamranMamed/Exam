@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="#" class="home-link">WORKOUT</a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="#">EXERCISES</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#">TRAINERS</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#">PRICING</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="back">
+        <div class="container">
+            <section class="section1">
+                <div class="s1w">
+                    <button class="s1w_1">NEW</button>
+                    <span class="s1w_2">Hight Intensity workout to burn calories</span>
+                </div>
+                <div class="s1_ct">
+                    <h1>Cardio Exercise</h1>
+                </div>
+                <div class="s1_images">
+                    <!-- <img src="img/s1/s1_1.png" alt="images"> -->
+                </div>
+                <div class="s1_t">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</span>
+                    <button class="s1_l">Get Started</button>
+                    <button class="s1_r">Preview</button>
+                </div>
+
+                <!-- Анимация -->
+                <div class="a1">
+                    <h2>38:14</h2>
+                    <span>TIME</span>
+                </div>
+                <div class="a2">
+                    <h2>165</h2>
+                    <span>EST CALORIES</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    const navbarToggle = navbar.querySelector("#navbar-toggle");
+    const navbarMenu = document.querySelector("#navbar-menu");
+    const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+    let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+    const toggleNavbarVisibility = () => {
+        isNavbarExpanded = !isNavbarExpanded;
+        navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+    };
+
+    navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+    navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+    navbarMenu.addEventListener("click", toggleNavbarVisibility);
+</script>
