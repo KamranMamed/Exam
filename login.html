@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+  <header id="navbar">
+    <nav class="navbar-container container">
+        <a href="#" class="home-link">WORKOUT</a>
+        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+            aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <li class="navbar-item"><a class="navbar-link" href="index.html">EXERCISES</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#">TRAINERS</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#">PRICING</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="">
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password">
+        <label for="">Password</label>
+      </div>
+      <a href="">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Invia
+      </a>
+    </form>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  const navbarToggle = navbar.querySelector("#navbar-toggle");
+  const navbarMenu = document.querySelector("#navbar-menu");
+  const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+  let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+  const toggleNavbarVisibility = () => {
+      isNavbarExpanded = !isNavbarExpanded;
+      navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+  };
+
+  navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+  navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+  navbarMenu.addEventListener("click", toggleNavbarVisibility);
+</script>
