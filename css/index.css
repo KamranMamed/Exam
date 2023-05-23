@@ -250,7 +250,8 @@ body {
 
 .s1_t>span {
     font-size: 16px;
-    color: rgb(112, 111, 111);;
+    color: rgb(112, 111, 111);
+    ;
 }
 
 .s1_l {
@@ -308,7 +309,7 @@ body {
     }
 
     25% {
-        right: 25px;
+        right: 20px;
         top: 75px;
     }
 
@@ -318,7 +319,7 @@ body {
     }
 
     75% {
-        right: -25px;
+        right: -20px;
         top: 75px;
     }
 
@@ -424,6 +425,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.s2_img1:hover {
+    width: 345px;
+    transition: 0.1s;
+}
+
 .s2_img1>h1 {
     font-size: 48px;
     position: absolute;
@@ -465,6 +471,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.s2_img2:hover {
+    width: 345px;
+    transition: 0.1s;
+}
+
 .s2_img2>h1 {
     font-size: 48px;
     position: absolute;
@@ -482,16 +493,6 @@ body {
     z-index: 10;
 }
 
-.s2_time1 {
-    width: 70px;
-    height: 30px;
-    background-color: black;
-    border-radius: 7px;
-    position: absolute;
-    right: 0;
-    bottom: 25px;
-}
-
 .s2_img3 {
     width: 343px;
     min-height: 270px;
@@ -503,6 +504,11 @@ body {
     background-image: url('../img/s2/s2_3.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.s2_img3:hover {
+    width: 345px;
+    transition: 0.1s;
 }
 
 .s2_img3>h1 {
@@ -522,16 +528,6 @@ body {
     z-index: 10;
 }
 
-.s2_time1 {
-    width: 70px;
-    height: 30px;
-    background-color: black;
-    border-radius: 7px;
-    position: absolute;
-    right: 0;
-    bottom: 25px;
-}
-
 .s2_img4 {
     width: 343px;
     min-height: 270px;
@@ -543,6 +539,11 @@ body {
     background-image: url('../img/s2/s2_4.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.s2_img4:hover {
+    width: 345px;
+    transition: 0.1s;
 }
 
 .s2_img4>h1 {
@@ -562,16 +563,6 @@ body {
     z-index: 10;
 }
 
-.s2_time1 {
-    width: 70px;
-    height: 30px;
-    background-color: black;
-    border-radius: 7px;
-    position: absolute;
-    right: 0;
-    bottom: 25px;
-}
-
 .s2_img5 {
     width: 343px;
     min-height: 270px;
@@ -583,6 +574,11 @@ body {
     background-image: url('../img/s2/s2_5.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.s2_img5:hover {
+    width: 345px;
+    transition: 0.1s;
 }
 
 .s2_img5>h1 {
@@ -602,16 +598,6 @@ body {
     z-index: 10;
 }
 
-.s2_time1 {
-    width: 70px;
-    height: 30px;
-    background-color: black;
-    border-radius: 7px;
-    position: absolute;
-    right: 0;
-    bottom: 25px;
-}
-
 .s2_img6 {
     width: 343px;
     min-height: 270px;
@@ -623,6 +609,11 @@ body {
     background-image: url('../img/s2/s2_6.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.s2_img6:hover {
+    width: 345px;
+    transition: 0.1s;
 }
 
 .s2_img6>h1 {
@@ -640,16 +631,6 @@ body {
     bottom: -20px;
     left: 15px;
     z-index: 10;
-}
-
-.s2_time1 {
-    width: 70px;
-    height: 30px;
-    background-color: black;
-    border-radius: 7px;
-    position: absolute;
-    right: 0;
-    bottom: 25px;
 }
 
 
@@ -738,7 +719,7 @@ body {
     color: rgb(112, 111, 111);
     position: absolute;
     left: 20px;
-    bottom: -25px;
+    bottom: -20px;
 }
 
 .s3_img3 {
@@ -764,7 +745,7 @@ body {
     font-weight: 400;
     color: rgb(112, 111, 111);
     position: absolute;
-    bottom: -65px;
+    bottom: -60px;
 }
 
 .s3_img4 {
@@ -790,7 +771,7 @@ body {
     font-weight: 400;
     color: rgb(112, 111, 111);
     position: absolute;
-    bottom: -65px;
+    bottom: -60px;
 }
 
 
@@ -839,6 +820,22 @@ body {
     font-weight: 400;
     color: rgb(75, 73, 73);
 
+}
+
+.s4_tS1 {
+    margin-left: 20px;
+}
+
+.s4_tH {
+    margin-left: -110px;
+}
+
+.s4_tS2 {
+    margin-left: -60px;
+}
+
+.s4_tB {
+    margin-left: -120px;
 }
 
 .k_footer {
@@ -929,7 +926,7 @@ body {
 
 
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 
     #navbar-toggle,
     #navbar-toggle[aria-expanded="true"] {
@@ -960,11 +957,13 @@ body {
         text-align: center;
         padding-bottom: 20px;
     }
+
     .footer-dark .item.text {
         margin-bottom: 0;
     }
 
-    
+
+
 }
 
 @media (max-width:991px) {
@@ -972,4 +971,166 @@ body {
         text-align: center;
         margin-top: 20px;
     }
+
+    .s1w{
+        width: 235px;
+        min-height: 20px;
+    }
+
+    .s1w_1{
+        width: 35px;
+        min-height: 20px;
+    }
+
+    .s1w_2{
+        font-size: 9px;
+    }
+
+    .s1_ct>h1 {
+        font-size: 125px;
+        font-weight: 600;
+        line-height: 135px;
+    }
+
+    .a1 {
+        display: none;
+    }
+
+    .a2 {
+        display: none;
+    }
+
+    .s1_images {
+        top: -40px;
+    }
+
+    .s1_l {
+        width: 120px;
+        min-height: 60px;
+    }
+
+    .s1_r {
+        width: 130px;
+        min-height: 60px;
+    }
+
+    .s1_t {
+        width: 400px;
+    }
+
+    .s1_t>span {
+        font-size: 16px;
+    }
+
+    .section2 {
+        min-height: 200vh;
+    }
+
+    .s2_img2 {
+        left: 55%;
+    }
+
+    .s2_img3 {
+        top: 400px;
+        left: 0;
+    }
+
+    .s2_img4 {
+        top: 400px;
+        left: 55%;
+    }
+
+    .s2_img5 {
+        top: 710px;
+        left: 0;
+    }
+
+    .s2_img6 {
+        top: 710px;
+        left: 55%;
+    }
+
+    .section3 {
+        min-height: 180vh;
+    }
+
+    .square {
+        width: 497px;
+        height: 477px;
+    }
+
+    .s3_rt {
+        display: none;
+    }
+
+    .s3_lt_1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .s3_lt_2 {
+        width: 300px;
+        height: 80px;
+        top: 240px;
+        left: 0;
+    }
+
+    .s3_img2 {
+        width: 300px;
+        height: 300px;
+        top: 400px;
+    }
+
+    .s3_img2>h4 {
+        font-size: 15px;
+        bottom: -10px;
+    }
+
+    .s3_img2>span {
+        font-size: 11px;
+        bottom: -20px;
+    }
+
+    .s3_img3 {
+        width: 196px;
+        height: 199px;
+        top: 477px;
+    }
+
+    .s3_img3>h4 {
+        font-size: 15px;
+        bottom: -30px;
+    }
+
+    .s3_img3>span {
+        font-size: 11px;
+        bottom: -40px;
+    }
+
+    .s3_img4 {
+        width: 196px;
+        height: 199px;
+        top: 675px;
+        left: 200px;
+    }
+
+    .s3_img4>h4 {
+        font-size: 15px;
+        bottom: -30px;
+    }
+
+    .s3_img4>span {
+        font-size: 11px;
+        bottom: -40px;
+    }
+
+    .s4_text{
+        font-size: 35px;
+    }
+
+    .down{
+        font-size: 10px;
+    }
+
+
 }
