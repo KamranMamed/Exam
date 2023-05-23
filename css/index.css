@@ -32,7 +32,7 @@ body {
 /* Навбар */
 #navbar {
     --navbar-height: 94px;
-    position: fixed;
+    position: sticky;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     left: 0;
@@ -171,8 +171,9 @@ body {
 
 .back {
     width: 100%;
-    min-height: 710vh;
+    min-height: 630vh;
     background-color: black;
+    position: relative;
 }
 
 
@@ -182,7 +183,7 @@ body {
     min-height: 100vh;
     /* background-color: red; */
     position: relative;
-    top: 150px;
+
 }
 
 .s1w {
@@ -249,6 +250,7 @@ body {
 
 .s1_t>span {
     font-size: 16px;
+    color: rgb(112, 111, 111);;
 }
 
 .s1_l {
@@ -298,7 +300,6 @@ body {
 
     animation: myfirst 4s linear 2s infinite alternate;
 }
-
 
 @keyframes myfirst {
     0% {
@@ -359,17 +360,14 @@ body {
 
 @keyframes mysecond {
     0% {
-        right: 0px;
         top: 220px;
     }
 
     50% {
-        right: 0px;
         top: 300px;
     }
 
     100% {
-        right: 0px;
         top: 220px;
     }
 }
@@ -393,10 +391,10 @@ body {
 /* Секция 2 */
 .section2 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
+    margin-top: 70px;
     /* background-color: darkorange; */
     position: relative;
-    top: 180px;
     left: 0;
 }
 
@@ -407,6 +405,7 @@ body {
 
 .s2_upr {
     float: right;
+    color: rgb(112, 111, 111);
     margin-top: 15px;
     font-size: 12px;
 }
@@ -435,6 +434,7 @@ body {
 
 .s2_img1>span {
     font-size: 13px;
+    color: rgb(112, 111, 111);
     position: absolute;
     bottom: -20px;
     left: 15px;
@@ -457,7 +457,8 @@ body {
     /* background-color: antiquewhite; */
     position: absolute;
     top: 90px;
-    left: 380px;
+    /* left: 380px; */
+    left: 35%;
     border-radius: 10px;
     background-image: url('../img/s2/s2_2.png');
     background-size: contain;
@@ -474,6 +475,7 @@ body {
 
 .s2_img2>span {
     font-size: 13px;
+    color: rgb(112, 111, 111);
     position: absolute;
     bottom: -20px;
     left: 15px;
@@ -513,6 +515,7 @@ body {
 
 .s2_img3>span {
     font-size: 13px;
+    color: rgb(112, 111, 111);
     position: absolute;
     bottom: -20px;
     left: 15px;
@@ -552,6 +555,7 @@ body {
 
 .s2_img4>span {
     font-size: 13px;
+    color: rgb(112, 111, 111);
     position: absolute;
     bottom: -20px;
     left: 15px;
@@ -574,7 +578,7 @@ body {
     /* background-color: antiquewhite; */
     position: absolute;
     top: 460px;
-    left: 380px;
+    left: 35%;
     border-radius: 10px;
     background-image: url('../img/s2/s2_5.png');
     background-size: contain;
@@ -591,6 +595,7 @@ body {
 
 .s2_img5>span {
     font-size: 13px;
+    color: rgb(112, 111, 111);
     position: absolute;
     bottom: -20px;
     left: 15px;
@@ -630,6 +635,7 @@ body {
 
 .s2_img6>span {
     font-size: 13px;
+    color: rgb(112, 111, 111);
     position: absolute;
     bottom: -20px;
     left: 15px;
@@ -650,17 +656,17 @@ body {
 /* Секция 3 */
 .section3 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 220vh;
+    margin-top: 70px;
     /* background-color: darkmagenta;   */
     position: relative;
-    top: 450px;
 }
 
 .square {
     width: 900px;
     height: 730px;
     position: absolute;
-    right: -90px;
+    right: 0px;
     background-color: rgb(26, 25, 25);
 }
 
@@ -674,6 +680,7 @@ body {
 
 .s3_rt>span {
     font-size: 23px;
+    color: rgb(112, 111, 111);
     font-weight: 400;
     line-height: 50px;
 }
@@ -714,7 +721,7 @@ body {
     background-size: contain;
     position: absolute;
     right: 1px;
-    bottom: -417px;
+    top: 554px;
 }
 
 .s3_img2>h4 {
@@ -742,7 +749,7 @@ body {
     background-repeat: no-repeat;
     position: absolute;
     left: 3px;
-    bottom: -377px;
+    top: 729px;
 }
 
 .s3_img3>h4 {
@@ -767,8 +774,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    left: 302px;
-    bottom: -677px;
+    left: 27%;
+    top: 1029px;
 }
 
 .s3_img4>h4 {
@@ -788,12 +795,10 @@ body {
 
 
 .section4 {
-
     width: 100%;
-    min-height: 100vh;
-    background-color: cyan;
+    min-height: 140vh;
+    /* background-color: cyan; */
     position: relative;
-    top: 1300px;
 }
 
 .accordion {
@@ -839,8 +844,10 @@ body {
 .k_footer {
     width: 100%;
     min-height: 50vh;
+    margin-top: 40px;
+    /* background-color: forestgreen; */
     position: relative;
-    top: 1400px;
+    /* top: 50px; */
 }
 
 .footer-dark {
@@ -956,6 +963,8 @@ body {
     .footer-dark .item.text {
         margin-bottom: 0;
     }
+
+    
 }
 
 @media (max-width:991px) {

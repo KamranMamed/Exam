@@ -9,9 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
-        <script src="https://kit.fontawesome.com/18601f5e95.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/18601f5e95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -75,8 +74,8 @@
 
 
             <!-- Секция 2 -->
-            <section class="section2">
-                <h1 class="s2_upl">Popular Exercises</h1>
+            <section class="section2 WOW ">
+                <h1 class="s2_upl wow ">Popular Exercises</h1>
                 <span class="s2_upr">SEE MORE EXERCISES</span>
 
                 <!-- Первая фотография  -->
@@ -386,79 +385,51 @@
 
             <footer class="k_footer">
                 <div class="footer-dark">
-                    <footer>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-3 item">
-                                    <h3>Services</h3>
-                                    <ul>
-                                        <li><a href="#">Web design</a></li>
-                                        <li><a href="#">Development</a></li>
-                                        <li><a href="#">Hosting</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-3 item">
-                                    <h3>About</h3>
-                                    <ul>
-                                        <li><a href="#">Company</a></li>
-                                        <li><a href="#">Team</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 item text">
-                                    <h3>WORKOUT</h3>
-                                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.
-                                        Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget
-                                        velit pulvinar dictum vel in justo.</p>
-                                </div>
-                                <div class="col item social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a
-                                        href="#"><i class="fa-brands fa-twitter"></i></a><a href="#">
-                                            <i class="fa-brands fa-snapchat"></i></a><a href="#">
-                                                <i class="fa-brands fa-instagram"></i></a></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 item">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Web design</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Hosting</a></li>
+                                </ul>
                             </div>
-                            <p class="copyright">Company Name © 2023</p>
+                            <div class="col-sm-6 col-md-3 item">
+                                <h3>About</h3>
+                                <ul>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 item text">
+                                <h3>WORKOUT</h3>
+                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.
+                                    Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget
+                                    velit pulvinar dictum vel in justo.</p>
+                            </div>
+                            <div class="col item social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a
+                                    href="#"><i class="fa-brands fa-twitter"></i></a><a href="#">
+                                    <i class="fa-brands fa-snapchat"></i></a><a href="#">
+                                    <i class="fa-brands fa-instagram"></i></a></div>
                         </div>
-                    </footer>
+                        <p class="copyright">Company Name © 2023</p>
+                    </div>
                 </div>
             </footer>
         </div>
     </div>
 
 
+
+<script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+<script src="js/index.js"></script>    
 </body>
 
 </html>
 
-<script>
-    const navbarToggle = navbar.querySelector("#navbar-toggle");
-    const navbarMenu = document.querySelector("#navbar-menu");
-    const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
-    let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
-
-    const toggleNavbarVisibility = () => {
-        isNavbarExpanded = !isNavbarExpanded;
-        navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
-    };
-
-    navbarToggle.addEventListener("click", toggleNavbarVisibility);
-
-    navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
-    navbarMenu.addEventListener("click", toggleNavbarVisibility);
-
-    // Секция 4 
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var sections = document.getElementsByClassName('accordion-section');
-
-        Array.prototype.forEach.call(sections, function (section) {
-            section.addEventListener('click', function () {
-                var content = this.nextElementSibling;
-                if (content.style.display === 'block') {
-                    content.style.display = 'none';
-                } else {
-                    content.style.display = 'block';
-                }
-            });
-        });
-    });
-</script>
