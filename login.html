@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/login.css">
 
 </head>
@@ -13,23 +15,23 @@
 <body>
   <header id="navbar">
     <nav class="navbar-container container">
-        <a href="#" class="home-link">WORKOUT</a>
-        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
-            aria-expanded="false">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div id="navbar-menu" aria-labelledby="navbar-toggle">
-            <ul class="navbar-links">
-                <li class="navbar-item"><a class="navbar-link" href="index.html">EXERCISES</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#">TRAINERS</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#">PRICING</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="login.html">LOGIN</a></li>
-            </ul>
-        </div>
+      <a href="#" class="home-link">WORKOUT</a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+        aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="index.html">EXERCISES</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">TRAINERS</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">PRICING</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
+  </header>
 
 
   <div class="login-box">
@@ -64,8 +66,8 @@
   let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
 
   const toggleNavbarVisibility = () => {
-      isNavbarExpanded = !isNavbarExpanded;
-      navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+    isNavbarExpanded = !isNavbarExpanded;
+    navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
   };
 
   navbarToggle.addEventListener("click", toggleNavbarVisibility);
