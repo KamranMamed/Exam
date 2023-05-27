@@ -2298,6 +2298,34 @@ body {
         font-size: 14px;
         bottom: -55px;
     }
+
+    .accordion-section{
+        height: 110px;
+    }
+
+    .s4_text{
+        font-size: 20px;
+    }
+
+    .left{
+        font-size: 18px;
+    }
+
+    .s4_tH{
+        margin-left: -25px;
+    }
+
+    .s4_tS2{
+        margin-left: -10px;
+    }
+
+    .s4_tB{
+        margin-left: -25px;
+    }
+
+    .arrow{
+        font-size: 30px;
+    }
 }
 
 
@@ -2663,5 +2691,9 @@ body {
 
     .s4_tB{
         margin-left: -25px;
+    }
+
+    .arrow{
+        font-size: 30px;
     }
 }

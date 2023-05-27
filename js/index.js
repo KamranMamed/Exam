@@ -1,3 +1,6 @@
+
+// Навбар
+
 const navbarToggle = navbar.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
 const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
@@ -15,7 +18,7 @@ navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 
 
-// Секция 4 
+// Аккардион 
 
 document.addEventListener('DOMContentLoaded', function () {
     var sections = document.getElementsByClassName('accordion-section');
@@ -32,5 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+// Wow js
 
 new WOW().init();
