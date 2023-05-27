@@ -1972,6 +1972,11 @@ body {
         top: 570px;
     }
 
+    .s3_img2:hover{
+        width: 100%;
+        height: 50vh;
+    }
+
     .s3_img3 {
         top: 1150px;
     }
@@ -2064,7 +2069,7 @@ body {
     }
 
     .s2_img1:hover{
-         width: 525px;
+        width: 100%;
     }
 
     .s2_img1 > h1{
@@ -2089,7 +2094,7 @@ body {
     }
 
     .s2_img2:hover{
-        width: 525px;
+        width: 100%;
     }
 
     .s2_img2 > h1{
@@ -2108,7 +2113,7 @@ body {
     }
 
     .s2_img3:hover{
-        width: 525px;
+        width: 100%;
     }
 
     .s2_img3 > h1{
@@ -2127,7 +2132,7 @@ body {
     }
 
     .s2_img4:hover{
-        width: 525px;
+        width: 100%;
     }
 
     .s2_img4 > h1{
@@ -2147,7 +2152,7 @@ body {
     }
 
     .s2_img5:hover{
-        width: 525px;
+        width: 100%;
     }
 
     .s2_img5 > h1{
@@ -2166,7 +2171,7 @@ body {
     }
 
     .s2_img6:hover{
-        width: 525px;
+        width: 100%;
     }
 
     .s2_img6 > h1{
@@ -2235,7 +2240,7 @@ body {
 
     .s3_img2:hover{
         width: 100%;
-        height: 520px;
+        height: 60vh;
     }
 
     .s3_img2>h4 {
@@ -2259,7 +2264,7 @@ body {
 
     .s3_img3:hover{
         width: 100%;
-        height: 520px;
+        height: 60vh;
     }
 
     .s3_img3>h4 {
@@ -2281,7 +2286,7 @@ body {
 
     .s3_img4:hover{
         width: 100%;
-        height: 520px;
+        height: 60vh;
     }
 
     .s3_img4>h4 {
