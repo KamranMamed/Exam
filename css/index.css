@@ -174,7 +174,7 @@ body {
 .section1 {
     width: 100%;
     min-height: 100vh;
-    margin-top: 70px;
+    margin-top: 69px;
     /* background-color: red; */
     position: relative;
 
@@ -187,6 +187,7 @@ body {
     border-radius: 20px;
     padding: 2px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .s1w_1 {
@@ -258,6 +259,9 @@ body {
     float: left;
     font-size: 18px;
     margin: 40px 25px 40px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
 }
 
 .s1_r {
@@ -269,6 +273,9 @@ body {
     float: left;
     font-size: 18px;
     margin: 40px 0;
+    position: absolute;
+    top: 60px;
+    left: 240px;
 }
 
 
@@ -1119,6 +1126,7 @@ body {
     .s1_r {
         width: 130px;
         min-height: 60px;
+        left: 160px;
     }
 
     .s1_t {
@@ -1391,15 +1399,16 @@ body {
         width: 105px;
         min-height: 50px;
         font-size: 15px;
-        top: 0;
+        top: 60px;
     }
 
-    
 
     .s1_r {
         width: 105px;
         min-height: 50px;
         font-size: 15px;
+        top: 60px;
+        left: 135px;
     }
 
     .s1_t {
@@ -1632,7 +1641,7 @@ body {
         width: 105px;
         min-height: 50px;
         font-size: 15px;
-        top: 0;
+        top: 60;
     }
 
 
@@ -1640,6 +1649,7 @@ body {
         width: 105px;
         min-height: 50px;
         font-size: 15px;
+        top: 60px;
     }
 
     .s1_t {
@@ -1899,32 +1909,41 @@ body {
 
 
 
-@media (max-width: 575px) {
+
+@media (max-width: 375px) {
     
     .section1{
-        min-height: 85vh;
+        min-height: 55vh;
     }
 
     .s1w{
-        width: 245px;
-        min-height: 20px;
+        width: 225px;
+        height: 18px;
+        position: relative;
+        top: 10px;
     }
 
     .s1w_1{
-        width: 45px;
-        height: 20px;
-        font-size: 10px;
+        width: 38px;
+        min-height: 18px;
+        font-size: 8px;
+        position: absolute;
+        top: 0px;
     }
 
     .s1w_2{
-        font-size: 9px;
+        font-size: 8px;
+        position: absolute;
+        top: 4px;
+        left: 50px;
     }
 
-
     .s1_ct > h1 {
-        font-size: 100px;
+        font-size: 70px;
         font-weight: 600;
-        line-height: 90px;
+        line-height: 60px;
+        position: relative;
+        top: 25px;
     }
 
     .a1 {
@@ -1954,47 +1973,62 @@ body {
     }
 
     .s1_t {
-        width: 395px;
-        top: 330px;
+        width: 100%;
+        top: 230px;
     }
 
     .s1_t>span {
-        font-size: 16px;
+        font-size: 13px;
+    }
+
+    .s1_l {
+        top: 60px;
+        left: 0;
+    }
+
+    .s1_r {
+        top: 60px;
+        left: 130px;
     }
 
     .section2 {
-        min-height: 460vh;
+        min-height: 300vh;
     }
 
     .s2_img1{
         width: 100%;
-        min-height: 390px;
+        min-height: 260px;
         left: 0;
     }
 
     .s2_img1:hover{
-         width: 525px;
+         width: 351px;
     }
 
     .s2_img1 > h1{
-        font-size: 60px;
+        font-size: 40px;
+        left: 15px;
     }
 
     .s2_img1 > span{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .s2_time1{
-        width: 80px;
-        min-height: 40px;
+        width: 60px;
+        min-height: 25px;
+    }
+
+    .s2_time1 > h5{
+        font-size: 1rem;
     }
 
     
     .s2_img2 {
         width: 100%;
-        min-height: 390px;
+        min-height: 260px;
         left: 0;
-        top: 550px;
+        top: 420px;
     }
 
     .s2_img2:hover{
@@ -2002,18 +2036,19 @@ body {
     }
 
     .s2_img2 > h1{
-        font-size: 60px;
+        font-size: 40px;
+        left: 15px;
     }
 
     .s2_img2 > span{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .s2_img3 {
         width: 100%;
-        min-height: 390px;
+        min-height: 260px;
         left: 0;
-        top: 1010px;
+        top: 750px;
     }
 
     .s2_img3:hover{
@@ -2021,18 +2056,19 @@ body {
     }
 
     .s2_img3 > h1{
-        font-size: 60px;
+        font-size: 40px;
+        left: 15px;
     }
 
     .s2_img3 > span{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .s2_img4 {
         width: 100%;
-        min-height: 390px;
+        min-height: 260px;
         left: 0;
-        top: 1470px;
+        top: 1080px;
     }
 
     .s2_img4:hover{
@@ -2040,19 +2076,20 @@ body {
     }
 
     .s2_img4 > h1{
-        font-size: 60px;
+        font-size: 40px;
+        left: 15px;
     }
 
     .s2_img4 > span{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     
     .s2_img5 {
         width: 100%;
-        min-height: 390px;
+        min-height: 260px;
         left: 0;
-        top: 1930px;
+        top: 1410px;
     }
 
     .s2_img5:hover{
@@ -2060,18 +2097,19 @@ body {
     }
 
     .s2_img5 > h1{
-        font-size: 60px;
+        font-size: 40px;
+        left: 15px;
     }
 
     .s2_img5 > span{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .s2_img6 {
         width: 100%;
-        min-height: 390px;
+        min-height: 260px;
         left: 0;
-        top: 2390px;
+        top: 1740px;
     }
 
     .s2_img6:hover{
@@ -2079,94 +2117,97 @@ body {
     }
 
     .s2_img6 > h1{
-        font-size: 60px;
+        font-size: 40px;
+        left: 15px;
     }
 
     .s2_img6 > span{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .section3 {
-        min-height: 350vh;
+        min-height: 280vh;
     }
 
     .square {
-        width: 73%;
+        width: 60%;
         height: 305px;
         right: 0;
     }
 
     .s3_rt {
-        width: 70%;
+        width: 150%;
         height: 50px;
-        top: 40px;
+        top: 345px;
         right: 0px;
     }
 
     .s3_rt > span {
         font-size: 12px;
-        line-height: 20px;
+        line-height: 18px;
     }
 
     .s3_l {
         width: 75px;
-        min-height: 35px;
+        height: 35px;
         font-size: 10px;
         left: 110px;
-        top: 130px;
+        top: 400px;
+        left: -110px;
     }
 
     .s3_lt{
+        width: 100%;
         top: 30px;
     }
 
     .s3_lt_1 {
-        width: 240px;
-        font-size: 55px;
-        line-height: 56px;
+        width: 260px;
+        font-size: 65px;
+        line-height: 68px;
     }
 
     .s3_lt_2 {
-        width: 200px;
-        height: 50px;
-        top: 200px;
+        width: 230px;
+        height: 55px;
+        top: 240px;
         left: -10px;
     }
 
     .s3_img2 {
         width: 100%;
-        height: 520px;
-        top: 375px;
+        height: 360px;
+        top: 520px;
         right: 0px;
     }
 
     .s3_img2:hover{
         width: 100%;
-        height: 520px;
+        height: 360px;
     }
 
     .s3_img2>h4 {
         font-size: 22px;
-        bottom: -2px;
+        bottom: -10px;
         left: 0;
     }
 
     .s3_img2>span {
         font-size: 14px;
-        bottom: -12px;
+        bottom: -22px;
         left: 0;
     }
 
     .s3_img3 {
         width: 100%;
-        height: 520px;
+        height: 360px;
         top: 950px;
         left: 0px;
     }
 
     .s3_img3:hover{
         width: 100%;
-        height: 520px;
+        height: 360px;
     }
 
     .s3_img3>h4 {
@@ -2181,14 +2222,14 @@ body {
 
     .s3_img4 {
         width: 100%;
-        height: 520px;
-        top: 1575px;
+        height: 360px;
+        top: 1415px;
         left: 0px;
     }
 
     .s3_img4:hover{
         width: 100%;
-        height: 520px;
+        height: 360px;
     }
 
     .s3_img4>h4 {
@@ -2199,6 +2240,34 @@ body {
     .s3_img4>span {
         font-size: 14px;
         bottom: -55px;
+    }
+
+    .section4{
+        min-height: 40vh;
+    }
+
+    .accordion-section{
+        height: 110px;
+    }
+
+    .s4_text{
+        font-size: 20px;
+    }
+
+    .left{
+        font-size: 18px;
+    }
+
+    .s4_tH{
+        margin-left: -25px;
+    }
+
+    .s4_tS2{
+        margin-left: -10px;
+    }
+
+    .s4_tB{
+        margin-left: -25px;
     }
 }
 
