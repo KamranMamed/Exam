@@ -1421,7 +1421,7 @@ body {
     }
 
     .section2 {
-        min-height: 170vh;
+        min-height: 165vh;
     }
 
     .s2_img1{
@@ -1453,7 +1453,7 @@ body {
     }
 
     .section3 {
-        min-height: 160vh;
+        min-height: 150vh;
     }
 
     .square {
@@ -1662,7 +1662,7 @@ body {
     }
 
     .section2 {
-        min-height: 430vh;
+        min-height: 460vh;
     }
 
     .s2_img1{
@@ -1786,7 +1786,7 @@ body {
     }
 
     .section3 {
-        min-height: 340vh;
+        min-height: 350vh;
     }
 
     .square {
@@ -1903,10 +1903,12 @@ body {
 
 }
 
+
+
 @media (max-width: 550px) {
 
     .section1{
-        min-height: 80vh;
+        min-height: 70vh;
     }
 
     .s1_ct>h1 {
@@ -1916,14 +1918,8 @@ body {
     }
 
     .section2{
-        min-height: 490vh;
+        min-height: 410vh;
     }
-
-    .section3{
-        min-height: 420vh;
-    }
-
-
 
     .s3_lt{
         width: 100%;
@@ -2065,7 +2061,7 @@ body {
     }
 
     .section2 {
-        min-height: 490vh;
+        min-height: 410vh;
     }
 
     .s2_img1{
@@ -2189,7 +2185,7 @@ body {
     }
 
     .section3 {
-        min-height: 390vh;
+        min-height: 350vh;
     }
 
     .square {
@@ -2251,13 +2247,13 @@ body {
 
     .s3_img2>h4 {
         font-size: 22px;
-        bottom: -40px;
+        bottom: -20px;
         left: 0;
     }
 
     .s3_img2>span {
         font-size: 14px;
-        bottom: -52px;
+        bottom: -32px;
         left: 0;
     }
 
@@ -2342,7 +2338,7 @@ body {
 @media (max-width: 375px) {
     
     .section1{
-        min-height: 60vh;
+        min-height: 55vh;
     }
 
     .s1w{
@@ -2421,7 +2417,7 @@ body {
     }
 
     .section2 {
-        min-height: 350vh;
+        min-height: 300vh;
     }
 
     .s2_img1{
@@ -2555,7 +2551,7 @@ body {
     }
 
     .section3 {
-        min-height: 330vh;
+        min-height: 280vh;
     }
 
     .square {
@@ -2581,8 +2577,8 @@ body {
         height: 35px;
         font-size: 10px;
         left: 110px;
-        top: 410px;
-        left: -100px;
+        top: 400px;
+        left: -110px;
     }
 
     .s3_lt{
