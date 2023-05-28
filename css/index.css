@@ -2185,7 +2185,7 @@ body {
     }
 
     .section3 {
-        min-height: 350vh;
+        min-height: 300vh;
     }
 
     .square {
@@ -2262,6 +2262,7 @@ body {
         height: 60vh;
         top: 1150px;
         left: 0px;
+        margin-top: -130px;
     }
 
     .s3_img3:hover{
@@ -2284,6 +2285,7 @@ body {
         height: 60vh;
         top: 1775px;
         left: 0px;
+        margin-top: -290px;
     }
 
     .s3_img4:hover{
@@ -2302,7 +2304,7 @@ body {
     }
 
     .section4{
-        min-height: 100vh;
+        min-height: 80vh;
     }
 
     .accordion-section{
