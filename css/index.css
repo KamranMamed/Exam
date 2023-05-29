@@ -1846,13 +1846,13 @@ body {
 
     .s3_img2>h4 {
         font-size: 22px;
-        bottom: -2px;
+        bottom: -22px;
         left: 0;
     }
 
     .s3_img2>span {
         font-size: 14px;
-        bottom: -12px;
+        bottom: -32px;
         left: 0;
     }
 
@@ -2263,6 +2263,8 @@ body {
         top: 1150px;
         left: 0px;
         margin-top: -130px;
+        background-size: cover;
+        background-position: center;
     }
 
     .s3_img3:hover{
@@ -2286,6 +2288,8 @@ body {
         top: 1775px;
         left: 0px;
         margin-top: -290px;
+        background-size: cover;
+        background-position: bottom;
     }
 
     .s3_img4:hover{
